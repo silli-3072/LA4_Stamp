@@ -13,6 +13,11 @@
 		82394AC628A926B8005957FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82394AC428A926B8005957FD /* Main.storyboard */; };
 		82394AC828A926B9005957FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82394AC728A926B9005957FD /* Assets.xcassets */; };
 		82394ACB28A926B9005957FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82394AC928A926B9005957FD /* LaunchScreen.storyboard */; };
+		82394AD828A926D2005957FD /* hana.png in Resources */ = {isa = PBXBuildFile; fileRef = 82394AD328A926D2005957FD /* hana.png */; };
+		82394AD928A926D2005957FD /* onpu.png in Resources */ = {isa = PBXBuildFile; fileRef = 82394AD428A926D2005957FD /* onpu.png */; };
+		82394ADA28A926D2005957FD /* hoshi.png in Resources */ = {isa = PBXBuildFile; fileRef = 82394AD528A926D2005957FD /* hoshi.png */; };
+		82394ADB28A926D2005957FD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 82394AD628A926D2005957FD /* background.png */; };
+		82394ADC28A926D2005957FD /* shitumon.png in Resources */ = {isa = PBXBuildFile; fileRef = 82394AD728A926D2005957FD /* shitumon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		82394AC728A926B9005957FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82394ACA28A926B9005957FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82394ACC28A926B9005957FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82394AD328A926D2005957FD /* hana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hana.png; sourceTree = "<group>"; };
+		82394AD428A926D2005957FD /* onpu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onpu.png; sourceTree = "<group>"; };
+		82394AD528A926D2005957FD /* hoshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hoshi.png; sourceTree = "<group>"; };
+		82394AD628A926D2005957FD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		82394AD728A926D2005957FD /* shitumon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shitumon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		82394ABD28A926B8005957FD /* Stamp */ = {
 			isa = PBXGroup;
 			children = (
+				82394AD228A926D2005957FD /* Stamp素材 */,
 				82394ABE28A926B8005957FD /* AppDelegate.swift */,
 				82394AC028A926B8005957FD /* SceneDelegate.swift */,
 				82394AC228A926B8005957FD /* ViewController.swift */,
@@ -66,6 +77,18 @@
 			);
 			path = Stamp;
 			sourceTree = "<group>";
+		};
+		82394AD228A926D2005957FD /* Stamp素材 */ = {
+			isa = PBXGroup;
+			children = (
+				82394AD328A926D2005957FD /* hana.png */,
+				82394AD428A926D2005957FD /* onpu.png */,
+				82394AD528A926D2005957FD /* hoshi.png */,
+				82394AD628A926D2005957FD /* background.png */,
+				82394AD728A926D2005957FD /* shitumon.png */,
+			);
+			path = "Stamp素材";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -126,8 +149,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				82394ACB28A926B9005957FD /* LaunchScreen.storyboard in Resources */,
+				82394ADA28A926D2005957FD /* hoshi.png in Resources */,
+				82394ADB28A926D2005957FD /* background.png in Resources */,
+				82394AD928A926D2005957FD /* onpu.png in Resources */,
 				82394AC828A926B9005957FD /* Assets.xcassets in Resources */,
 				82394AC628A926B8005957FD /* Main.storyboard in Resources */,
+				82394ADC28A926D2005957FD /* shitumon.png in Resources */,
+				82394AD828A926D2005957FD /* hana.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +318,8 @@
 				DEVELOPMENT_TEAM = 35J88B9SPN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stamp/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "編集した画像をフォトライブラリに保存します。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アプリ内で編集する画像をフォトライブラリから呼び出します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +348,8 @@
 				DEVELOPMENT_TEAM = 35J88B9SPN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stamp/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "編集した画像をフォトライブラリに保存します。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アプリ内で編集する画像をフォトライブラリから呼び出します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
